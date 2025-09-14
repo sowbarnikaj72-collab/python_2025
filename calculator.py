@@ -14,7 +14,7 @@ Exponentiation: **
 """
 print (para)
 
-operator=input("Select operation +,-,*,/,// :")
+operator = input("Select operation (+, -, *, /, //, %, **, exit): ")
 num1=float(input("enter num 1:"))
 num2=float(input("enter num 2:"))
 
@@ -30,12 +30,10 @@ elif operator=='//':
     print((num1 //num2))
 elif operator=='**':
     print((num1**num2))
-elif operator=='+':
-    print((num1+num2))
 elif operator=='%':
     print((num1%num2))
 else:
-    print("give valid output")
+    print("give valid input")
 
 
 
