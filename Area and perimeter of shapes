@@ -1,0 +1,72 @@
+# Area and perimeter of shapes 
+import math
+print("Find Area and perimeter ")
+shape=input("provide the name of the shape:" )
+
+if shape=='square':
+    side=float(input("enter side of the square : "))
+ 
+
+    print("select A for AREA and select P for perimeter  ")
+    sq1=input('INPUT: ')
+    if sq1=='A':
+        print(side*side)
+    elif sq1=='P':
+        print(4*side)
+    else:
+        print('give valid input')
+
+elif shape=='rectangle':
+    length=float(input("enter length of the rectangle  : "))
+    breadth=float(input("enter breadth of the rectangle  : "))
+
+ 
+
+    print("select A for AREA and select P for perimeter  ")
+    sq2=input('INPUT: ')
+    if sq2=='A':
+        print(length*breadth)
+    elif sq2=='P':
+        print(2*(length+breadth))
+    else:
+        print('give valid input')
+
+elif shape=='triangle':
+    height=float(input("enter height of the Triangle  : "))
+    base=float(input("enter base of the Triangle  : "))
+    side=float(input("enter side of the Triangle  : "))
+
+
+ 
+
+    print("select A for AREA ,select P for perimeter, H for hypotenuse   ")
+    sq3=input('INPUT: ')
+    if sq3=='A':
+        print(1/2*height*base)
+    elif sq3=='P':
+        print(side+base+side)
+    elif sq3=='H':
+        print(math.sqrt(math.pow(side,2)+math.pow(base,2)))
+    else:
+        print('give valid input')
+
+elif shape=='circle':
+    radius=float(input("Enter radius of the circle :"))
+    print("select A for AREA ,select P for perimeter")
+    sq4=input('INPUT: ')
+    if sq4=='A':
+        print(math.pi*radius*radius)
+    elif sq4=='P':
+       print(2*math.pi*radius)
+    else:
+        print('give valid input')
+
+else:
+        print('give valid input')
+    
+    
+
+
+
+
+            
