@@ -1,0 +1,10 @@
+print('weight converter')
+unit=float(input('enter unit:'))
+converter=input(' To convert into killograms or pounds (enter k or l)')
+if converter=='k':
+    pounds= 0.453592 * unit
+    print(f'{unit} kg converted to {round(pounds,2)}lbs ')
+elif converter=='l':
+    killogram= unit*2.20462
+    print(f'{unit} lbs is converted to {round(killogram,2)}kg') 
+else: print('enter valid input')
