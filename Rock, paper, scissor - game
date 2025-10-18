@@ -1,0 +1,40 @@
+# rockpaper
+import random
+running= True
+options=["rock",'paper','scissors']
+print('WELCOME TO ROCK, PAPER, SCISSORS.')
+name=input("ENTER YOUR NAME: ")
+
+
+print('__________________________________________________________________________')
+while running:
+    print()
+    
+    computer= random.choice(options)
+    user= input(" USER         : ").lower()
+
+    if user=='q':
+        break
+    while user not in options:
+        print("ENTER VALID INPUT")
+        user= input(" USER         : ").lower()
+        
+    print(f' COMPUTER     :{computer}')
+    
+
+    if user==computer:
+        print("           GAME TIE !!!")
+    elif user=='rock' and computer=='paper':
+        print("           COMPUTER WINS  ")
+    elif  user=='paper' and computer=='scissors':
+        print("           COMPUTER WINS  ")
+    elif user=='scissors' and computer=='rock':
+        print("           COMPUTER WINS  ")
+   
+    else:
+        print(f"          {name} WINS !!!!")
+    print("press q to quit")
+    
+print('__________________________________________________________________________')
+
+
