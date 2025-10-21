@@ -13,15 +13,18 @@ while running:
     computer= random.choice(options)
     user= input(" USER         : ").lower()
 
-    if user=='q':
-        break
     while user not in options:
-        print("ENTER VALID INPUT")
-        user= input(" USER         : ").lower()
-        
-    print(f' COMPUTER     :{computer}')
-    
+        if user == 'q':           
+            running = False        
+            break                 
+        print("ENTER VALID INPUT / q to quit")
+       
+        user = input(" USER         : ").lower()
+    if not running:               
+        break                      
 
+    print(f' COMPUTER     : {computer}')
+    
     if user==computer:
         print("           GAME TIE !!!")
     elif user=='rock' and computer=='paper':
@@ -33,8 +36,10 @@ while running:
    
     else:
         print(f"          {name} WINS !!!!")
-    print("press q to quit")
     
+    print("q to quit")
 print('__________________________________________________________________________')
+
+
 
 
