@@ -1,0 +1,53 @@
+# number gussing game where user will guess the number computrer choose
+import random
+
+computer=random.randint(0,100)
+
+print("welcome to  guess in the given range, guess the number computer chooses from 1 to 100")
+print(computer )
+score=7
+
+
+for i in range(7):
+    user=int(input("Enter your number:"))
+    if user==computer:
+     print("number is guessed right")
+     break
+    
+    elif  computer>10 and computer<=15 :
+        print('number is greater than 10 and less than or equal to  15')
+    
+        
+    elif computer>15 and computer<=30:
+        print("number is greater than 15 and less than equal to 30") 
+        
+    elif computer>30 and computer<=45:
+        print("number is greater than 30 and less than equal to 45")
+        
+    elif computer>45 and computer<=60:
+        print("number is greater than 45 and less than equal to 60")
+        
+    elif computer>60 and computer<=75:
+        print("number is greater than 60 and less than equal to 75")
+        
+    elif computer>75 and computer<=90:
+        print("number is greater than 75 and less than equal to 90")  
+        
+    else:
+        print("enter valid input")
+    score-=1
+    print(f' you have {score} guesses remaining')
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
